@@ -19,6 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # Uncomment this line (and adjust as you like)
       override.vm.synced_folder "./shared", "/shared"
 
+      # Uncomment to enable USB passthrough. Run `vboxmanage list usbhost` and modify VendorID and ProductID accordingly
+     # vb.customize ["modifyvm", :id, "--usb", "on"]
+     # vb.customize ['usbfilter', 'add', '0', '--target', :id, '--name', 'pirate', '--vendorid', '0x0403', '--productid', '0x6001']
       vb.name = name
       vb.memory = memory
       vb.gui = false
