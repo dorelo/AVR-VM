@@ -1,6 +1,6 @@
 # AVR-VM
 
-This is a 64 bit Ubuntu 16.04 virtual machine managed by Vagrant, that contains tools particulary useful for RE and exploit development with AVR as the target architecture.
+This is a 64 bit Ubuntu 16.04 virtual machine managed by Vagrant, that contains tools particulary useful for RE and exploit development with AVR as the target architecture. Furthermore, the config explains how to pass hardware devices into the VM, so that you can do work on real hardware.
 
 It exposes itself as 10.10.10.10 on a private network.
 
