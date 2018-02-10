@@ -1,8 +1,13 @@
 #!/bin/bash
 
 # Updates
-sudo apt-get -y update
-sudo apt-get -y upgrade
+sudo apt-get -y -qq update
+#sudo apt-get -y remove grub-pc
+sudo apt-mark hold grub-pc
+#sudo apt-get -y install grub-pc
+#sudo grub-install /dev/sda
+#sudo update-grub # fix https://github.com/hashicorp/vagrant/issues/289
+sudo apt-get -y -qq upgrade
 
 sudo apt-get -y install python2.7-dev # header files
 sudo apt-get -y install texinfo
